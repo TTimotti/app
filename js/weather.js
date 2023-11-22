@@ -6,10 +6,10 @@ const onGeoSuccess = (position) => {
     fetch(url)
     .then(response => response.json())
     .then(data => {
-        const weather = document.querySelector("#weather span:first-child");
-        const city = document.querySelector("#weather span:nth-child(3)");
-        const temp = document.querySelector("#weather span:nth-child(5)");
-        const humid = document.querySelector("#weather span:nth-child(6)");
+        const weather = document.querySelector("#weather div:first-child");
+        const city = document.querySelector("#weather div:nth-child(2)");
+        const temp = document.querySelector("#weather div:nth-child(3) span:nth-child(1)");
+        const humid = document.querySelector("#weather div:nth-child(3) span:nth-child(2)");
         const weatherId = data.weather[0].id;
         const description = weatherDescKo.find(item => Object.keys(item)[0] === `${weatherId}`)?.[weatherId];
         weather.innerText = data.name;
