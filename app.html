@@ -9,37 +9,34 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container hidden">
         <header>
             <h2 id="clock"></h2>
+            <h1 id="greeting" class="hidden">
+                Welecome, <span></span>!
+             </h1>
             <div id="weather">
-                <span></span>
-                <br />
-                <span></span>
-                <br />
-                기온 : <span></span>°C
-                습도 : <span></span>%
+                <div id="cityName" class="weatherLabel">지역</div>
+                <div id="weatherDesc" class="weatherLabel">날씨</div>
+                <div class="weatherLabel">기온 : <span></span> °C / 습도 : <span></span> %</div>
             </div>
-            <div id="quote">
-                <span></span>
-                <br />
-                <span></span>
-            </div>
-        </header>
+        </header>       
         <main>
-            <section id="profile">
-                <h1 id="greeting" class="hidden"></h1>
-            </section>
-            <section id="todo">
+            <section id="profile">                
                 <form id="todo-form">
-                    <input type="text" placeholder="Write a To Do and Press" />
+                    <input type="text" placeholder=" INSERT TO-DO" />
                 </form>
                 <ul id="todo-list">
                 </ul>
             </section>
         </main>
+        <div id="quote">
+            <span></span>
+            <br />
+            <span></span>
+        </div>
     </div>
-    <div id="login-div">
+    <div id="login-div" class="hidden">
         <form id="login-form">
             <input id="nameInput" placeholder="이름을 입력하세요" type="text" maxlength="5" autocomplete="false" required>
             <button type="submit">👉</button>
