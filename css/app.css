@@ -32,50 +32,139 @@
     font-weight: normal;
     font-style: normal;
 }
+
 /*RESET CSS : S*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 /*RESET CSS : E*/
 
 .hidden {
@@ -107,7 +196,7 @@ table {
 }
 
 #login-form button:hover {
-        cursor: pointer;
+    cursor: pointer;
 }
 
 #nameInput {
@@ -129,7 +218,7 @@ body {
     background-attachment: fixed;
 }
 
-.container{
+.container {
     width: 75%;
     height: auto;
     color: ghostwhite;
@@ -142,12 +231,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 25px 0 25px 0;    
+    margin: 25px 0 25px 0;
     font-family: 'DungGeunMo';
     gap: 25px;
 }
 
-#clock {    
+#clock {
     font-size: 48px;
     text-align: center;
     background-color: rgba(190, 229, 255, 0.1);
@@ -158,7 +247,7 @@ header {
 main {
     flex: 1;
     margin-top: 30px;
-    display: flex;    
+    display: flex;
 }
 
 #weather {
@@ -236,7 +325,7 @@ main {
     background-color: rgba(190, 229, 255, 0.1);
     box-shadow: inset;
     border-radius: 15px;
-    padding: 10px 20px;    
+    padding: 10px 20px;
     text-align: center;
     border-top: 3px solid cyan;
     border-bottom: 3px solid darkcyan;
@@ -247,7 +336,7 @@ main {
     display: flex;
 }
 
-#todo-list li span{
+#todo-list li span {
     flex: 1;
     align-self: center;
     font-size: 28px;
@@ -256,4 +345,18 @@ main {
 #todo-list button {
     background-color: rgba(190, 229, 255, 0.5);
     padding: 15px;
+}
+
+#todo-list button {
+    background-color: rgba(190, 229, 255, 0.2);
+    border-radius: 15px;
+    border-top: 3px solid darkcyan;
+    border-bottom: 3px solid cyan;
+    font-family: 'SBAggroB';
+    color: azure;
+}
+
+#todo-list button:hover {
+    cursor: pointer;
+    color: rgb(209, 31, 31);
 }

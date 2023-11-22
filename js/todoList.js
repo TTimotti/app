@@ -24,7 +24,7 @@ const paintTodo = (todo) => {
     todoListDiv.appendChild(li);
 
     const deleteBtn = document.createElement("button");
-    deleteBtn.innerText = "X";
+    deleteBtn.innerText = "REMOVE";
     deleteBtn.addEventListener("click", deleteTodo)
 
     li.appendChild(span);
