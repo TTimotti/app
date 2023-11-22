@@ -85,7 +85,7 @@ table {
 #login-div {
     width: 100vw;
     height: 100vh;
-    background-image: url(./img/hasselmann.jpg);
+    background-image: url(../img/hasselmann.jpg);
     background-repeat: none;
     background-size: cover;
 }
@@ -123,7 +123,7 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    background-image: url(./img/HUDwallpaper.png);
+    background-image: url(../img/HUDwallpaper.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
